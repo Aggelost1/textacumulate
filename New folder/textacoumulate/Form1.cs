@@ -45,8 +45,8 @@ namespace textacoumulate
         {
             //  try
             // {
-            
-                txtFin = all.LastIndexOf(@"<hr>");
+            all = Regex.Replace(all, @"<\s*hr\s*", @"<hr");
+            txtFin = all.LastIndexOf(@"<hr");
                 string some1 = all.Substring(0,txtFin);
                 txtStrt = some1.LastIndexOf(seperator);
                 string some = some1.Substring(txtStrt);

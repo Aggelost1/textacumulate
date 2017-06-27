@@ -7,3 +7,12 @@ c:\users\admin\documents\visual studio 2017\Projects\textacoumulate\textacoumula
 c:\users\admin\documents\visual studio 2017\Projects\textacoumulate\textacoumulate\obj\Debug\textacoumulate.csproj.GenerateResource.Cache
 c:\users\admin\documents\visual studio 2017\Projects\textacoumulate\textacoumulate\obj\Debug\textacoumulate.exe
 c:\users\admin\documents\visual studio 2017\Projects\textacoumulate\textacoumulate\obj\Debug\textacoumulate.pdb
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\bin\Debug\textacoumulate.exe.config
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\bin\Debug\textacoumulate.exe
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\bin\Debug\textacoumulate.pdb
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\obj\Debug\textacoumulate.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\obj\Debug\textacoumulate.Form1.resources
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\obj\Debug\textacoumulate.Properties.Resources.resources
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\obj\Debug\textacoumulate.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\obj\Debug\textacoumulate.exe
+C:\Users\admin\Desktop\textacoumulate\textacumulate\New folder\textacoumulate\obj\Debug\textacoumulate.pdb

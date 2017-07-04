@@ -35,10 +35,10 @@ namespace textacoumulate
         {
            string final = all;
           final =  Regex.Replace(final, @"<(.|\n)*?>", String.Empty);
-           /* foreach (string garb in garbige) {
-                 final = Regex.Replace(final, @garb,"");
-            }*/
-            
+            /* foreach (string garb in garbige) {
+                  final = Regex.Replace(final, @garb,"");
+             }*/
+          final = Regex.Replace(final, @"#[1-9][0-9][0-9][0-9]", String.Empty);
             return final;
         }
         private string txtOnly(string all)
@@ -46,8 +46,10 @@ namespace textacoumulate
             //  try
             // {
             all = Regex.Replace(all, @"<\s*hr\s*", @"<hr");
+            all = Regex.Replace(all, @"\s*hr\s*>", @"hr>");
             txtFin = all.LastIndexOf(@"<hr");
                 string some1 = all.Substring(0,txtFin);
+
                 txtStrt = some1.LastIndexOf(seperator);
                 string some = some1.Substring(txtStrt);
                 return some;

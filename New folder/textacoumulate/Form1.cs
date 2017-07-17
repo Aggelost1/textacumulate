@@ -47,10 +47,23 @@ namespace textacoumulate
             // {
             all = Regex.Replace(all, @"<\s*hr\s*", @"<hr");
             all = Regex.Replace(all, @"\s*hr\s*>", @"hr>");
-            txtFin = all.LastIndexOf(@"<hr");
-                string some1 = all.Substring(0,txtFin);
+            int txtFin1 = all.LastIndexOf(@"<hr");
+            int txtFin2 = all.LastIndexOf(@"hr>");
+            if (all.IndexOf(@"This chapter was sponsored by") != -1) { txtFin = all.IndexOf(@"This chapter was sponsored by"); }
+            else
+            {
+                if (txtFin1 > txtFin2) { txtFin = txtFin1 - 3; } else { txtFin = txtFin2 - 3; }
+            }
+            int txtsrt1 = all.IndexOf(@"<hr");
+            int txtsrt2 = all.IndexOf(@"hr>");
+            if (txtsrt1 != -1 && txtsrt2 != -1)
+            {
+                if (txtsrt1 > txtsrt2) { txtStrt = txtsrt2 + 5; } else { txtStrt = txtsrt1 + 5; }
+            }
+            else { txtStrt = all.IndexOf(@"<p>"); }
+            string some1 = all.Substring(0,txtFin);
 
-                txtStrt = some1.LastIndexOf(seperator);
+                //txtStrt = some1.LastIndexOf(seperator);
                 string some = some1.Substring(txtStrt);
                 return some;
            // }
@@ -91,7 +104,7 @@ namespace textacoumulate
 
             SaveFileDialog savefile = new SaveFileDialog();
             // set a default file name
-            savefile.FileName = "texttospch.txt";
+            savefile.FileName = startS+"-"+finS;
             // set filters - this can be done in properties as well
             savefile.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
 
